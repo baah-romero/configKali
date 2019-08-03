@@ -13,11 +13,14 @@ apt-get update
 echo "|-[+++++++---] 30% completado. Actualizados los repositorios. Inicia instalación."
 apt-get install -y docker-ce
 echo "|-[+++++-----] 50% completado. Docker instalado."
+docker pull citizenstig/dvwa
+echo "|-[++++++----] 60% completado. Instalado Docker citizenstig/dvwa"
+docker pull adamdoupe/wackopicko
+echo "|-[+++++++---] 70% completado. Instalado Docker adamdoupe/wackopicko"
 
 if [ -d "$DIR2" ] #Comprobar que existe la ruta /home/CEHv10
  then
-	cd $DIR2
-	pwd	 
+	cd $DIR2	 
 else
 	cd $DIRECT
 	if [ -d "$DIRECT$DOT" ] #Comprobar que exista directorio /CEHv10 en /home
@@ -28,7 +31,6 @@ else
 	fi
 	
 fi
-echo "|-[+++++++---] 65% completado. Creando ruta /home/CEHv10/docker"
 if [ -d "$DIR2$DOCK" ] #Comprobar /home/CEHv10/docker
  then
 	cd $DIR1
