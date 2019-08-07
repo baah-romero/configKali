@@ -42,9 +42,9 @@ fi
 echo "|-[+++++++---] 75% completado. Ruta /home/CEHv10/docker CREADA!"
 echo "Se procede a crear los ficheros dvwaDocker.sh y wackoDocker.sh"
 
-	echo '#!/bin/bas' > $DIR1/dvwaDocker.sh 
+	echo '#!/bin/bash' > $DIR1/dvwaDocker.sh 
 	echo 'docker run -p 127.0.0.1:9000:80 -it citizenstig/dvwa' >> $DIR1/dvwaDocker.sh 
-	echo '#!/bin/bas' > $DIR1/wackoDocker.sh 
+	echo '#!/bin/bash' > $DIR1/wackoDocker.sh 
 	echo 'docker run -p 127.0.0.1:8000:80 -it adamdoupe/wackopicko' >> $DIR1/wackoDocker.sh
 echo "|-[++++++++--] 80% completado. Creados los ficheros dvwaDocker.sh y wackoDocker.sh"
 	chmod +x $DIR1/dvwaDocker.sh && chmod +x $DIR1/wackoDocker.sh
